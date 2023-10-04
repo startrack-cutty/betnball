@@ -1,0 +1,14 @@
+<html>
+</body>
+<h1>JEFF TEST APP LOADED DAWG...</h1>
+{% if favUrls %}
+<ul>
+  {% for favUrl in favUrls %}
+  <li>{{ favUrl.url }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>We aint rolling like that yet dawg...</p>
+{% endif %}
+</body>
+</html>

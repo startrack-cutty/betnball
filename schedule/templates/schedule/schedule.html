@@ -1,0 +1,17 @@
+{% extends 'main_app2/_base.html' %}
+
+<html>
+  <body>
+    {% block content %}
+    <h1>Football Schedule:</h1>
+    {% if games %}
+    <ul>
+      {% for game in games %}
+      <li>{{ game.gameid }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>We aint rolling yet dawg...</p>
+    {% endif %} {% endblock %}
+  </body>
+</html>
